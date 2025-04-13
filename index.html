@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <form class="search">
+            <img src="icons/search-icon.svg" alt="worldwide-location"/>
+            <input type="text" placeholder="Search your city...." class="search-field">
+            <div class="dropdown">
+                <!-- <div>A</div>
+                <div>B</div> -->
+            </div>
+        </form>
+        <div class="weather">
+            <div class="left-side">
+                <img src="" class="weather-icon"></img>
+                <h2 class="city" style="text-align: center;">Delhi</h2>
+                <p class="date-time">25 Nov</p>
+                <div class="forecast">clear</div>
+                <div class="current-temperature card">
+                    <img src="icons/temperature.svg">
+                    <div class="temp-text">25&degC</div>
+                </div>
+                <div class="max-min">
+                    <div class="min-temp card">
+                        <img src="icons/cold.svg">
+                        <div class="min-text">50&degC</div>
+                    </div>
+                    <div class="max-temp card">
+                        <img src="icons/hot.svg">
+                        <div class="max-text">50&degC</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="card">
+                    <img src="icons/feels-like.svg">
+                    <div class="right-side-text">
+                        <h4>Feels like</h4>
+                        <p id="feels-like">ghj</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="icons/humidity.svg">
+                    <div class="right-side-text">
+                        <h4>Humidity</h4>
+                        <p id="humidity">ghj</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="icons/pressure.svg">
+                    <div class="right-side-text">
+                        <h4>Pressure</h4>
+                        <p id="pressure">ghj</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="icons/wind.svg">
+                    <div class="right-side-text">
+                        <h4>Wind</h4>
+                        <p id="wind">ghj</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="icons/pollution.svg">
+                    <div class="right-side-text">
+                        <h4>PM 2.5</h4>
+                        <p id="pm2.5">ghj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="entry">
+            <label for="api_key">API Key for search functionality : </label>
+            <input type="text" id="api_key" class="api-key" placeholder="API Key..." size="50">
+            <button type="button">SET</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
